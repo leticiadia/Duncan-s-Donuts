@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duncan's Donuts</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="frame">
+        <form name="orderform" action="">
+            <h2>Duncan's Donuts</h2>
+            <img src="image/donut.jpg" alt="Image of a donut with chocolate icing and sprinkles" id="imageDonut">
+            <div class="input">
+                <input required type="text" name="name" id="name" value="">
+                <label>Name</label>
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <input required type="text" name="cakedonuts" id="cakedonuts" value="" onchange="updateOrder();">
+                <label>Cake donuts</label>
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <input required type="text" name="glazeddonuts" id="glazeddonuts" value="" onchange="updateOrder();">
+                <label>Glazed donuts</label>
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <input required type="text" name="minutestilpickup" id="pickupminutes" value="">
+                <label>Minutes 'til pickup</label>
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <input required type="text" name="subtotal" id="subtotal" value="">
+                <label>Subtotal</label>
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <input required type="text" name="tax" id="tax" value="">
+                <label>Tax</label>
+                <span class="error"></span>
+            </div>
+
+            <div class="input">
+                <input required type="text" name="total" id="total" value="">
+                <label>Total</label>
+                <span class="error"></span>
+            </div>
+
+            <button type="submit" onclick="placeOrder(this.form);">Place Order</button>
+        </form>
+    </div>
+</body>
+
+</html>
